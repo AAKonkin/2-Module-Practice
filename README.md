@@ -30,3 +30,11 @@
 -   posts: массив post: id / title / imageUrl / publishedAt / commentsCount
 -   post: id / title / imageUrl Y content / publishedAt / comments: массив comment: id / author / content / publishedAt
 -   users: массив user: id / login / registeredat / role
+
+# Генерация картинок:
+
+Ссылка: https://picsum.photos/280/150
+
+# Генерация текста:
+
+Ссылка: https://fishtext.ru/index.php
