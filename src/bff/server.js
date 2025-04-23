@@ -35,15 +35,15 @@ export const server = {
 		};
 	},
 	async register(regLogin, regPassword) {
-		const user = await getUser(regLogin);
-		if (user) {
+		const existedUser = await getUser(regLogin);
+		if (existedUser) {
 			return {
 				error: 'Already registred!',
 				res: null,
 			};
 		}
 
-		await addUser(regLogin, regPassword);
+		const user = await addUser(regLogin, regPassword);
 
 		const session = {
 			logout() {
