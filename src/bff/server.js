@@ -1,29 +1,37 @@
 // BFF - Backend For Frontend
 import { getUser } from './get-user';
 import { addUser } from './add-user';
-import { createSession } from './create-session';
+import { sessions } from './sessions.js';
 
 export const server = {
+	async logout(session) {
+		sessions.remove(session);
+	},
 	async authorize(authLogin, authPassword) {
 		const user = await getUser(authLogin);
 
 		if (!user) {
 			return {
 				error: 'User not found!',
-				response: null,
+				res: null,
 			};
 		}
 
 		if (authPassword !== user.password) {
 			return {
 				error: 'Wrong password!',
-				response: null,
+				res: null,
 			};
 		}
 
 		return {
 			error: null,
-			response: createSession(user.role_id),
+			res: {
+				id: user.id,
+				login: user.login,
+				roleId: user.role_id,
+				session: sessions.create(user),
+			},
 		};
 	},
 	async register(regLogin, regPassword) {
@@ -31,7 +39,7 @@ export const server = {
 		if (user) {
 			return {
 				error: 'Already registred!',
-				response: null,
+				res: null,
 			};
 		}
 
@@ -48,7 +56,12 @@ export const server = {
 
 		return {
 			error: null,
-			response: createSession(user.role_id),
+			res: {
+				id: user.id,
+				login: user.login,
+				roleId: user.role_id,
+				session: sessions.create(user),
+			},
 		};
 	},
 };

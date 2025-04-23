@@ -26,7 +26,7 @@
 
 # Схема для редакс стора (на клиенте):
 
--   user: id / login / roleld
+-   user: id / login / roleld / session
 -   posts: массив post: id / title / imageUrl / publishedAt / commentsCount
 -   post: id / title / imageUrl Y content / publishedAt / comments: массив comment: id / author / content / publishedAt
 -   users: массив user: id / login / registeredat / role
