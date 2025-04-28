@@ -3,5 +3,6 @@ export * from './icon/icon.jsx';
 export * from './footer/footer.jsx';
 export * from './input/input.jsx';
 export * from './button/button.jsx';
-export * from './h2/h2Component.jsx';
+export * from './h2/h2.jsx';
 export * from './authFormError/authFormError.jsx';
+export * from './content/content.jsx';

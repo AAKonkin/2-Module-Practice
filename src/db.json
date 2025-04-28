@@ -4,20 +4,20 @@
       "id": "001",
       "login": "alex",
       "password": "qwerty123",
-      "registed_at": "2025-03-24",
+      "registered_at": "2025-03-24",
       "role_id": 0
     },
     {
       "login": "ivan",
       "password": "qwerty123",
-      "registed_at": "2065-01-24",
+      "registered_at": "2065-01-24",
       "role_id": 2,
       "id": "ESSv9fb"
     },
     {
       "login": "ivan2",
       "password": "qwerty123",
-      "registed_at": "2065-01-24",
+      "registered_at": "2065-01-24",
       "role_id": 2,
       "id": "pUB3OCv"
     }
@@ -66,7 +66,7 @@
       "name": "Читатель"
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "Гость"
     }
   ],
