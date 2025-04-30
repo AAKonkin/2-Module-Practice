@@ -33,11 +33,11 @@ const CommentsConteiner = ({ className, comments, postId }) => {
 					onClick={() => onNewCommentAdd(userId, postId, newComment)}
 				/>
 			</div>
-
 			<div className="comments">
 				{comments.map(({ id, content, author, publishedAt }) => (
 					<Comment
 						key={id}
+						postId={postId}
 						id={id}
 						author={author}
 						content={content}
