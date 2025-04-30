@@ -27,7 +27,6 @@ const CommentContainer = ({
 					dispatch(removeCommentAsync(requestServer, postId, id));
 					dispatch(CLOSE_MODAL);
 				},
-
 				onCancel: () => dispatch(CLOSE_MODAL),
 			}),
 		);

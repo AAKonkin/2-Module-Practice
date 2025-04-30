@@ -8,4 +8,3 @@ export const setUserRole = (userId, roleId) =>
 			role_id: roleId,
 		}),
 	});
-// }).then((createdUser) => createdUser.json());
