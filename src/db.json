@@ -72,10 +72,66 @@
   ],
   "comments": [
     {
-      "id": "",
-      "author_id": "",
-      "post_id": "",
-      "content": ""
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2065-01-24",
+      "content": "hello world!",
+      "id": 1
+    },
+    {
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2065-01-24",
+      "content": "hello world! 2",
+      "id": 2
+    },
+    {
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2065-01-24",
+      "content": "hello world! 3",
+      "id": 3
+    },
+    {
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2065-01-24",
+      "content": "hello world! 4",
+      "id": 4
+    },
+    {
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2065-01-24",
+      "content": "hello world! 5",
+      "id": 5
+    },
+    {
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2065-01-24",
+      "content": "hello world! 6",
+      "id": 6
+    },
+    {
+      "author_id": "001",
+      "post_id": "001",
+      "published_at": "2065-01-24",
+      "content": "new comment!",
+      "id": 7
+    }
+  ],
+  "sessions": [
+    {
+      "hash": "0.09836812857612864391398943553213030099868774414063",
+      "user": {
+        "id": "001",
+        "login": "alex",
+        "password": "qwerty123",
+        "registeredAt": "2025-03-24",
+        "roleId": 0
+      },
+      "id": 1
     }
   ]
 }

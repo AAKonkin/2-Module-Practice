@@ -12,15 +12,6 @@ export const register = async (regLogin, regPassword) => {
 
 	const user = await addUser(regLogin, regPassword);
 
-	// const session = {
-	// 	logout() {
-	// 		Object.keys(session).forEach((key) => delete session[key]);
-	// 	},
-	// 	removeComment() {
-	// 		console.log('Удаление комментария');
-	// 	},
-	// };
-
 	return {
 		error: null,
 		res: {
