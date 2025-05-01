@@ -19,6 +19,7 @@ const PostContentConteiner = ({
 			/>
 			<H2>{title}</H2>
 			<SpecialPanel
+				id={id}
 				publishedAt={publishedAt}
 				margin="-20px 0 20px"
 				editButton={
@@ -30,20 +31,6 @@ const PostContentConteiner = ({
 					/>
 				}
 			/>
-			{/* <div className="special-panel">
-				<div className="published-at">
-					<Icon id="fa-calendar-o" margin="0 10px 0 0" size="18px" />
-					{publishedAt}
-				</div>
-				<div className="buttons">
-					<Icon
-						id="fa-pencil-square-o"
-						margin="0 10px 0 0"
-						size="21px"
-					/>
-					<Icon id="fa-trash-o" margin="0 0 0 0" size="21px" />
-				</div>
-			</div> */}
 			<div className="post-text">{content}</div>
 		</div>
 	);
