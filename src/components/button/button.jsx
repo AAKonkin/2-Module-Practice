@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ButtonContainer = ({ children, className, width, ...props }) => {
+const ButtonContainer = ({ children, className, ...props }) => {
 	return (
 		<button className={className} {...props}>
 			{children}
@@ -18,6 +18,6 @@ export const Button = styled(ButtonContainer)`
 	border: 1px solid #000;
 	background-color: #eee;
 	&:hover {
-		cursor: pointer;
+		cursor: ${({ disabled }) => (disabled ? 'default' : 'pointer')};
 	}
 `;
