@@ -5,5 +5,6 @@ export * from './input/input.jsx';
 export * from './button/button.jsx';
 export * from './h2/h2.jsx';
 export * from './authFormError/authFormError.jsx';
-export * from './content/content.jsx';
+export * from './privateContent/privateContent.jsx';
 export * from './modal/modal.jsx';
+export * from './error/error.jsx';

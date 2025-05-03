@@ -7,8 +7,6 @@ export const fetchPosts = async (searchPhrase, page, limit) => {
 		getComments(),
 	]);
 
-	console.log(posts);
-
 	return {
 		error: null,
 		res: {
