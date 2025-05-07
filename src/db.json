@@ -20,13 +20,6 @@
       "registered_at": "2065-01-24",
       "role_id": 2,
       "id": "pUB3OCv"
-    },
-    {
-      "login": "test",
-      "password": "qwerty123",
-      "registered_at": "2065-01-24",
-      "role_id": 2,
-      "id": "oow7_Et"
     }
   ],
   "posts": [
@@ -140,6 +133,13 @@
       "published_at": "2065-01-24",
       "content": "fsdfsdfsdfdsf",
       "id": 4
+    },
+    {
+      "author_id": "001",
+      "post_id": "Cd8wjA8",
+      "published_at": "2065-01-24",
+      "content": "new Comment\n",
+      "id": 5
     }
   ],
   "sessions": [
@@ -175,6 +175,17 @@
         "roleId": 0
       },
       "id": 3
+    },
+    {
+      "hash": "0.49165648411604223610993358306586742401123046875000",
+      "user": {
+        "id": "001",
+        "login": "alex",
+        "password": "qwerty123",
+        "registeredAt": "2025-03-24",
+        "roleId": 0
+      },
+      "id": 4
     }
   ]
 }

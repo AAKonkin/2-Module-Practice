@@ -1,6 +1,7 @@
 import { H2, Icon } from '../../../../components';
 import { SpecialPanel } from '../specialPanel/specialPanel';
 import { useNavigate } from 'react-router-dom';
+import { PROP_TYPES } from '../../../../constants';
 import styled from 'styled-components';
 
 const PostContentConteiner = ({
@@ -47,3 +48,7 @@ export const PostContent = styled(PostContentConteiner)`
 		white-space: pre-line;
 	}
 `;
+
+PostContent.propTypes = {
+	post: PROP_TYPES.POST.isRequired,
+};
